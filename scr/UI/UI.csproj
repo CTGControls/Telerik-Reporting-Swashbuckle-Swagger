@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>CTG.TRSS.UI</AssemblyName>
+    <RootNamespace>CTG.TRSS.UI</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharedCode\SharedCode.csproj" />
+  </ItemGroup>
 
 </Project>

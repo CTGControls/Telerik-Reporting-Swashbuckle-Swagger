@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CTG.TRSS.API</name>
+    </assembly>
+    <members>
+        <member name="T:CTG.TRSS.API.StartupExtensions.ReportTelerikExtension">
+            <summary>
+            Reports Startup Extension
+            </summary>
+        </member>
+        <member name="M:CTG.TRSS.API.StartupExtensions.ReportTelerikExtension.AddReportTelerikConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Startup Add Config for Controllers
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:CTG.TRSS.API.StartupExtensions.ReportTelerikExtension.UseReportTelerikConfig(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Startup Use Config for Controllers
+            </summary>
+            <param name="app">IApplicationBuilder</param>
+        </member>
+        <member name="T:CTG.TRSS.API.StartupExtensions.SwaggerGenExtension">
+            <summary>
+            API SwaggerGen Startup Extension
+            </summary>
+        </member>
+        <member name="M:CTG.TRSS.API.StartupExtensions.SwaggerGenExtension.AddSwaggerGenConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Startup Add Config for SwaggerGen
+            </summary>
+            <param name="services">IServiceCollection</param>
+            <param name="Configuration">IConfiguration</param>
+        </member>
+        <member name="M:CTG.TRSS.API.StartupExtensions.SwaggerGenExtension.UseSwaggerGenConfig(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Startup Use Config for SwaggerGen
+            </summary>
+            <param name="app">IApplicationBuilder</param>
+        </member>
+    </members>
+</doc>

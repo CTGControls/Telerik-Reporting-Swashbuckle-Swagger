@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>CTG.TRSS.API</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>API.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,8 +16,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.5.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="5.5.1" />
+    <PackageReference Include="Telerik.Reporting.OpenXmlRendering.Trial" Version="14.1.20.618" />
     <PackageReference Include="Telerik.Reporting.Services.AspNetCore.Trial" Version="14.1.20.618" />
     <PackageReference Include="Telerik.WebReportDesigner.Services.Trial" Version="14.1.20.618" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharedCode\SharedCode.csproj" />
   </ItemGroup>
 
 </Project>
