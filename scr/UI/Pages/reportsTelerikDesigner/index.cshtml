@@ -1,0 +1,36 @@
+@page
+@model UI.Pages.reportsTelerikDesigner.IndexModel
+@inject Microsoft.Extensions.Hosting.IHostEnvironment HostEnvironment
+
+@{
+    ViewData["Title"] = "Report Viewer";
+    Layout = "~/Pages/Shared/_LayoutAdmin.cshtml";
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.default.min.css" rel="stylesheet" />
+
+
+<div class="text-center">
+    <div id="webReportDesigner" style="width:100%; height:1000px">
+        loading...
+    </div>
+</div>
+<script src="~/lib/jquery/jquery.js"></script>
+<script type='text/javascript' src='https://demos.telerik.com/reporting/js/webReportDesigner.kendo.min.js'></script>
+<script type='text/javascript' src='https://localhost:435447/API/reportsTelerikViewer/resources/js/telerikReportViewer'></script>
+<script type='text/javascript' src='https://localhost:435447/API/reportsTelerikDesigner/designerresources/js/webReportDesigner'></script>
+
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $("#webReportDesigner")
+            .telerik_WebReportDesigner({
+                toolboxArea: {
+                    layout: "list"
+                },
+                serviceUrl: 'https://localhost:435447/API/reportsTelerikDesigner/',
+                report: 'Report Catalog.trdp'
+            }).data("telerik_WebDesigner");
+    });
+</script>
