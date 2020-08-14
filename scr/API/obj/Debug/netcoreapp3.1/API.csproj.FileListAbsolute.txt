@@ -74,3 +74,4 @@ C:\Users\CTGControls\source\repos\Telerik-Reporting-Swashbuckle-Swagger\scr\API\
 C:\Users\CTGControls\source\repos\Telerik-Reporting-Swashbuckle-Swagger\scr\API\obj\Debug\netcoreapp3.1\CTG.TRSS.API.pdb
 C:\Users\CTGControls\source\repos\Telerik-Reporting-Swashbuckle-Swagger\scr\API\obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache
 C:\Users\CTGControls\source\repos\Telerik-Reporting-Swashbuckle-Swagger\scr\API\bin\Debug\netcoreapp3.1\API.xml
+C:\Users\CTGControls\source\repos\Telerik-Reporting-Swashbuckle-Swagger\scr\API\bin\Debug\netcoreapp3.1\Data\AppUsers.json

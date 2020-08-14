@@ -4,6 +4,57 @@
         <name>CTG.TRSS.API</name>
     </assembly>
     <members>
+        <member name="T:API.Controllers.reportsTelerikDesignerController">
+            <summary>
+            Telerik report designer controller
+            </summary>
+        </member>
+        <member name="M:API.Controllers.reportsTelerikDesignerController.#ctor(Telerik.WebReportDesigner.Services.IReportDesignerServiceConfiguration,Telerik.Reporting.Services.IReportServiceConfiguration)">
+            <summary>
+            Telerik report designer controller
+            </summary>
+            <param name="reportDesignerServiceConfiguration"></param>
+            <param name="reportServiceConfiguration"></param>
+        </member>
+        <member name="T:API.Controllers.userController">
+            <summary>
+            Telerik report designer controller
+            </summary>
+        </member>
+        <member name="M:API.Controllers.userController.GetUsers">
+            <summary>
+            Get a list of users.
+            </summary>
+            <returns>APIModels.addresses.parentDto</returns>
+            <response code="200">Returns a list of users.</response>
+            <response code="404">No User found.</response>
+        </member>
+        <member name="M:API.Controllers.userController.PostUser(CTG.TRSS.SharedCode.APIModels.AppUser)">
+            <summary>
+            Creates a new Address
+            </summary>
+            <param name="appUser">User Populate Dto</param>
+            <returns>APIModels.addresses.parentDto</returns>
+            <response code="201">If the user was created.</response>
+            <response code="400">If the model is not formatted correctly.</response>
+        </member>
+        <member name="T:CTG.TRSS.API.StartupExtensions.ControllersExtension">
+            <summary>
+            API Controllers Startup Extension
+            </summary>
+        </member>
+        <member name="M:CTG.TRSS.API.StartupExtensions.ControllersExtension.AddControllersConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Startup Add Config for Controllers
+            </summary>
+            <param name="services">IServiceCollection</param>
+        </member>
+        <member name="M:CTG.TRSS.API.StartupExtensions.ControllersExtension.UseControllersConfig(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Startup Use Config for Controllers
+            </summary>
+            <param name="app">IApplicationBuilder</param>
+        </member>
         <member name="T:CTG.TRSS.API.StartupExtensions.ReportTelerikExtension">
             <summary>
             Reports Startup Extension

@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace SharedCode
+namespace CTG.TRSS.SharedCode
 {
     public class Program
     {

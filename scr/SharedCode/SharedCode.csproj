@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyName>CTG.TRSS.SharedCode</AssemblyName>
+    <RootNamespace>CTG.TRSS.SharedCode</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

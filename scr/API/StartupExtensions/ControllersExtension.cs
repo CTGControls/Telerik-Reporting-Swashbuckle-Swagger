@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CTG.TRSS.SharedCode.StartupExtensions
+namespace CTG.TRSS.API.StartupExtensions
 {
     /// <summary>
     /// API Controllers Startup Extension
@@ -15,7 +15,10 @@ namespace CTG.TRSS.SharedCode.StartupExtensions
         public static void AddControllersConfig(this IServiceCollection services)
         {
 
-            services.AddControllers()
+            services.AddControllers(options =>
+            {
+                options.Conventions.Add(new ActionHidingConvention());
+            })
             .AddNewtonsoftJson();
 
         }

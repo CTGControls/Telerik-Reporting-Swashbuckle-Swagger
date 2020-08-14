@@ -36,6 +36,8 @@ namespace CTG.TRSS.API
 
             app.UseRouting();
             app.UseCorsConfig();
+            app.UseSwaggerGenConfig();
+            app.UseStaticFiles(); // For the wwwroot folder
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers()
