@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\API\\API.csproj": {}
+    "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\API\\API.csproj": {
+    "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\API\\API.csproj",
+        "projectPath": "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\API\\API.csproj",
         "packagesPath": "C:\\Users\\CTGControls\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\API\\obj\\",
+        "outputPath": "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
