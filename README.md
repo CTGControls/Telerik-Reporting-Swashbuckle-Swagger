@@ -1,9 +1,7 @@
 # Telerik Reporting Swashbuckle Swagger
 
 This is an example to help Progress Telerik diagnose why the report designer is not compatible with [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) implementation of swagger
-
-
-To generate the error you must enable to designer to be added to swagger. Open API => StartupExtensions => SwaggerGenExtension 
+ 
 
 > :warning: 
 > **Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]**
@@ -18,9 +16,11 @@ To generate the error you must enable to designer to be added to swagger. Open A
 > at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
 > at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 
-![No Error](img/SwaggerGenExtension002.png?raw=true "Title")
+## To generate the error you must enable to designer to be added to swagger. Open API => StartupExtensions => SwaggerGenExtension
 
-Change line 100 from 
+![No Error](img/SwaggerGenExtension002.png?raw=true "NoError")
+
+Change line 74 from 
 
 ```csharp
 if (action.Controller.ControllerName.Contains("reportsTelerikDesignerController")) 
@@ -31,3 +31,5 @@ to
 ```csharp
 if (action.Controller.ControllerName.Contains("xreportsTelerikDesignerController")) 
 ```
+
+![Error](img/SwaggerGenExtension003.png?raw=true "Error")
