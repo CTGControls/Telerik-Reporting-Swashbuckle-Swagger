@@ -28,9 +28,9 @@ namespace CTG.TRSS.API.StartupExtensions
 
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "FFM",
+                    Title = "CTG TRSS",
                     Version = "v1",
-                    Description = "Heat Treat Management",
+                    Description = "Telerik Reporting Swashbuckle Swagger",
                     //TermsOfService = new Uri("None"),
                     Contact = new OpenApiContact
                     {
@@ -38,23 +38,6 @@ namespace CTG.TRSS.API.StartupExtensions
                         Email = "chris@ctgcontrols.com",
                         Url = new Uri("https://www.ctgcontrols.com")
                     }                 
-                });
-
-                c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
-                {
-                    Type = SecuritySchemeType.OAuth2,
-                    //OpenIdConnectUrl = new System.Uri(Configuration.GetIDPServerUrl() + "/.well-known/openid-configuration"),}
-                }); ;
-
-                c.AddSecurityRequirement(new OpenApiSecurityRequirement
-                {
-                    {
-                        new OpenApiSecurityScheme
-                        {
-                            Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "oauth2" }
-                        },
-                        new[] { "ctgffm_api" }
-                    }
                 });
 
                 var filePath = Path.Combine(System.AppContext.BaseDirectory, "api.xml");
@@ -78,15 +61,7 @@ namespace CTG.TRSS.API.StartupExtensions
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "FFM API V1");
-                //c.RoutePrefix = string.Empty;
-                c.OAuthClientId("pkce_code_client");
-                c.OAuthAppName("Code Client Using PKCE"); // presentation purposes only
-                //c.OAuthClientId("ctgffm");
-                //c.OAuthAppName("CTG Factory Floor Management"); // presentation purposes only
-                c.OAuthClientSecret("secret");
-                c.OAuthUsePkce();
-               
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CTG TRSS API V1");
             });
         }
 
