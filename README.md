@@ -18,18 +18,17 @@
 
 ### To generate the error you must enable to designer to be added to swagger. Open API => StartupExtensions => SwaggerGenExtension
 
-![No Error](img/SwaggerGenExtension002.png?raw=true "NoError")
-
 Change line 74 from 
 
 ```csharp
-if (action.Controller.ControllerName.Contains("reportsTelerikDesignerController")) 
+if (action.Controller.ControllerName.Contains("Designer")) 
 ```
+![No Error](img/SwaggerGenExtension002.png?raw=true "NoError")
 
 to
 
 ```csharp
-if (action.Controller.ControllerName.Contains("xreportsTelerikDesignerController")) 
+if (action.Controller.ControllerName.Contains("xDesigner")) 
 ```
 
 ![Error](img/SwaggerGenExtension003.png?raw=true "Error")
