@@ -18,4 +18,16 @@ To generate the error you must enable to designer to be added to swagger. Open A
 > at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
 > at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 
-![Alt text](img/SwaggerGenExtension002.png?raw=true "Title")
+![No Error](img/SwaggerGenExtension002.png?raw=true "Title")
+
+Change line 100 from 
+
+```csharp
+if (action.Controller.ControllerName.Contains("reportsTelerikDesignerController")) 
+```
+
+to
+
+```csharp
+if (action.Controller.ControllerName.Contains("xreportsTelerikDesignerController")) 
+```
