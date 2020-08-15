@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\scr",
+    "\\scr\\API",
+    "\\scr\\API\\StartupExtensions",
+    "\\scr\\SharedCode",
+    "\\scr\\UI",
+    "\\scr\\UI\\Pages"
   ],
+  "SelectedNode": "\\scr\\scr.sln",
   "PreviewInSolutionExplorer": false
 }
