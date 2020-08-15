@@ -1,6 +1,6 @@
 # Telerik Reporting Swashbuckle Swagger
 
-**This is an example to help Progress Telerik diagnose why the report designer is not compatible with [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) implementation of swagger.**
+**This is an example to help Progress Telerik diagnose why the report designer is not compatible with [Swashbuckles'](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) implementation of swagger.**
  
 
 > :warning: 
