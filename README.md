@@ -16,7 +16,7 @@
 > at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
 > at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 
-### To generate the error you must enable to designer to be added to swagger. Open API => StartupExtensions => SwaggerGenExtension
+### To generate the error you must enable to designer the be added to swagger. Open API => StartupExtensions => SwaggerGenExtension
 
 Change line 74 from 
 
