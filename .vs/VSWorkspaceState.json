@@ -2,11 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\scr",
-    "\\scr\\API",
-    "\\scr\\API\\StartupExtensions",
-    "\\scr\\SharedCode",
-    "\\scr\\UI",
-    "\\scr\\UI\\Pages"
+    "\\scr\\API"
   ],
   "SelectedNode": "\\scr\\scr.sln",
   "PreviewInSolutionExplorer": false
