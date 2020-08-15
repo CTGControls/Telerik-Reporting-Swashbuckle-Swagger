@@ -250,11 +250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\UI\\UI.csproj",
       "projectName": "CTG.TRSS.UI",
-      "projectPath": "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\UI\\UI.csproj",
+      "projectPath": "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\CTGControls\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\UI\\obj\\",
+      "outputPath": "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -278,8 +278,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\SharedCode\\SharedCode.csproj": {
-              "projectPath": "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\SharedCode\\SharedCode.csproj"
+            "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\SharedCode\\SharedCode.csproj": {
+              "projectPath": "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\SharedCode\\SharedCode.csproj"
             }
           }
         }

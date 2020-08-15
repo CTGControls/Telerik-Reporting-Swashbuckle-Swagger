@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lgvv82QQYFQ+8jyEjnz6a0/CSfONp4r1LHH2/SuN91GDlgyApLMNiG66SIwoONGFC8yTAkpPN2wT/3NuHaltJQ==",
+  "dgSpecHash": "oaSQ9md6Pv7lLNdWT+y3ZPSrG733DrE3RdG8P0ChpvRz+ToJODpy4HzhjhIvPGXQtLzOO0R+/L6YfOw+7AQv6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CTGControls\\Source\\Repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\CTGControls\\source\\repos\\Telerik-Reporting-Swashbuckle-Swagger\\scr\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CTGControls\\.nuget\\packages\\documentformat.openxml\\2.7.2\\documentformat.openxml.2.7.2.nupkg.sha512",
     "C:\\Users\\CTGControls\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.7\\microsoft.aspnetcore.jsonpatch.3.1.7.nupkg.sha512",

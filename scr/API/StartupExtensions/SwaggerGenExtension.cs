@@ -18,7 +18,6 @@ namespace CTG.TRSS.API.StartupExtensions
         /// Startup Add Config for SwaggerGen
         /// </summary>
         /// <param name="services">IServiceCollection</param>
-        /// <param name="Configuration">IConfiguration</param>
         public static void AddSwaggerGenConfig(this IServiceCollection services) {
 
             // Register the Swagger generator, defining 1 or more Swagger documents
