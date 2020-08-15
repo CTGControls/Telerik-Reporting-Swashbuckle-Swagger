@@ -7,12 +7,13 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 
-namespace API.Controllers
+namespace CTG.TRSS.API.Controllers
 {
     /// <summary>
     /// Telerik report designer controller
@@ -79,24 +80,12 @@ namespace API.Controllers
         [ProducesResponseType(typeof(void), 400)]
         public async Task<IActionResult> PostUser([FromBody] AppUser appUser)
         {
-
             List<AppUser> appUsers = new List<AppUser>();
-            string json = string.Empty;
-            using (FileStream fs = System.IO.File.OpenWrite(_userDataBase))
+            using (FileStream fs = System.IO.File.OpenRead(_userDataBase))
             {
                 try
                 {
-                    appUser.Id = Guid.NewGuid();
-                    //appUsers = await JsonSerializer.DeserializeAsync<List<AppUser>>(fs);
-                    appUsers.Append(appUser);
-
-
-                    await JsonSerializer.SerializeAsync<List<AppUser>>(fs, appUsers);
-                    fs.Position = 0;
-
-                    using var reader = new StreamReader(fs);
-                    json = await reader.ReadToEndAsync();
-
+                    appUsers = await JsonSerializer.DeserializeAsync<List<AppUser>>(fs);
                 }
                 catch (Exception e)
                 {
@@ -104,8 +93,15 @@ namespace API.Controllers
                 }
 
             }
+            appUser.Id = Guid.NewGuid();
+            appUsers.Add(appUser);
 
-            //return CreatedAtAction("GetUser", new { id = appUser.Id }, appUser);
+
+            using (FileStream fs = System.IO.File.OpenWrite(_userDataBase))
+            {
+                await JsonSerializer.SerializeAsync(fs, appUsers);
+            }
+
             return Created("", appUsers);
 
         }

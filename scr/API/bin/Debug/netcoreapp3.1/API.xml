@@ -4,24 +4,35 @@
         <name>CTG.TRSS.API</name>
     </assembly>
     <members>
-        <member name="T:API.Controllers.reportsTelerikDesignerController">
+        <member name="T:CTG.TRSS.API.Controllers.reportsTelerikDesignerController">
             <summary>
             Telerik report designer controller
             </summary>
         </member>
-        <member name="M:API.Controllers.reportsTelerikDesignerController.#ctor(Telerik.WebReportDesigner.Services.IReportDesignerServiceConfiguration,Telerik.Reporting.Services.IReportServiceConfiguration)">
+        <member name="M:CTG.TRSS.API.Controllers.reportsTelerikDesignerController.#ctor(Telerik.WebReportDesigner.Services.IReportDesignerServiceConfiguration,Telerik.Reporting.Services.IReportServiceConfiguration)">
             <summary>
             Telerik report designer controller
             </summary>
             <param name="reportDesignerServiceConfiguration"></param>
             <param name="reportServiceConfiguration"></param>
         </member>
-        <member name="T:API.Controllers.userController">
+        <member name="T:CTG.TRSS.API.Controllers.reportsTelerikViewerController">
+            <summary>
+            Routes Controller
+            </summary>
+        </member>
+        <member name="M:CTG.TRSS.API.Controllers.reportsTelerikViewerController.#ctor(Telerik.Reporting.Services.IReportServiceConfiguration)">
+            <summary>
+            returns a intractive 
+            </summary>
+            <param name="reportServiceConfiguration"></param>
+        </member>
+        <member name="T:CTG.TRSS.API.Controllers.userController">
             <summary>
             Telerik report designer controller
             </summary>
         </member>
-        <member name="M:API.Controllers.userController.GetUsers">
+        <member name="M:CTG.TRSS.API.Controllers.userController.GetUsers">
             <summary>
             Get a list of users.
             </summary>
@@ -29,7 +40,7 @@
             <response code="200">Returns a list of users.</response>
             <response code="404">No User found.</response>
         </member>
-        <member name="M:API.Controllers.userController.PostUser(CTG.TRSS.SharedCode.APIModels.AppUser)">
+        <member name="M:CTG.TRSS.API.Controllers.userController.PostUser(CTG.TRSS.SharedCode.APIModels.AppUser)">
             <summary>
             Creates a new Address
             </summary>

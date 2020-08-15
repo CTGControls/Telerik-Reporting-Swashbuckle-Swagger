@@ -1,0 +1,40 @@
+﻿@page
+@model UI.Pages.reportsTelerikDesigner.IndexModel
+@inject Microsoft.Extensions.Hosting.IHostEnvironment HostEnvironment
+
+@{
+    ViewData["Title"] = "Report Viewer";
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<link href="~/lib/Font-Awesome/css/font-awesome.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.common.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.default.min.css" rel="stylesheet" />
+
+
+<div class="text-center">
+    <div id="reportViewer1" style="width:100%; height:1000px">
+        loading...
+    </div>
+</div>
+<script src="~/lib/jquery/jquery.js"></script>
+<script src="~/lib/jquery-validation/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+<script src="~/lib/popper.js/umd/popper.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script type='text/javascript' src='https://localhost:5091/API/reportsTelerikViewer/resources/js/telerikReportViewer'></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#reportViewer1")
+            .telerik_ReportViewer({
+                serviceUrl: "https://localhost:5091/API/reportsTelerikViewer/",
+                reportSource: {
+                    report: "Report Catalog.trdp"
+                },
+                scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
+                scale: 1.0
+            });
+    });
+</script>

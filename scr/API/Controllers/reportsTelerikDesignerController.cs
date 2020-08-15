@@ -3,7 +3,7 @@ using Telerik.Reporting.Services;
 using Telerik.WebReportDesigner.Services;
 using Telerik.WebReportDesigner.Services.Controllers;
 
-namespace API.Controllers
+namespace CTG.TRSS.API.Controllers
 {
     /// <summary>
     /// Telerik report designer controller

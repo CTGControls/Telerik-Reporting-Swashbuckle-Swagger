@@ -97,9 +97,7 @@ namespace CTG.TRSS.API.StartupExtensions
         public void Apply(ActionModel action)
         {
             // Replace with any logic you want
-            if (
-                action.Controller.ControllerName.Contains("Designer") || 
-                action.Controller.ControllerName.Contains("reportsSyncfusion"))
+            if (action.Controller.ControllerName.Contains("reportsTelerikDesignerController")) 
             {
                 action.ApiExplorer.IsVisible = false;
             }

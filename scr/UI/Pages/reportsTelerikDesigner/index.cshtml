@@ -3,11 +3,12 @@
 @inject Microsoft.Extensions.Hosting.IHostEnvironment HostEnvironment
 
 @{
-    ViewData["Title"] = "Report Viewer";
+    ViewData["Title"] = "Report Designer";
     Layout = null;
 }
 
 <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<link href="~/lib/Font-Awesome/css/font-awesome.css" rel="stylesheet" />
 <link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.common.min.css" rel="stylesheet" />
 <link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.default.min.css" rel="stylesheet" />
 
@@ -18,9 +19,13 @@
     </div>
 </div>
 <script src="~/lib/jquery/jquery.js"></script>
+<script src="~/lib/jquery-validation/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+<script src="~/lib/popper.js/umd/popper.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 <script type='text/javascript' src='https://demos.telerik.com/reporting/js/webReportDesigner.kendo.min.js'></script>
-<script type='text/javascript' src='https://localhost:435447/API/reportsTelerikViewer/resources/js/telerikReportViewer'></script>
-<script type='text/javascript' src='https://localhost:435447/API/reportsTelerikDesigner/designerresources/js/webReportDesigner'></script>
+<script type='text/javascript' src='https://localhost:5091/API/reportsTelerikViewer/resources/js/telerikReportViewer'></script>
+<script type='text/javascript' src='https://localhost:5091/API/reportsTelerikDesigner/designerresources/js/webReportDesigner'></script>
 
 <script type='text/javascript'>
     $(document).ready(function () {
@@ -29,7 +34,7 @@
                 toolboxArea: {
                     layout: "list"
                 },
-                serviceUrl: 'https://localhost:435447/API/reportsTelerikDesigner/',
+                serviceUrl: 'https://localhost:5091/API/reportsTelerikDesigner/',
                 report: 'Report Catalog.trdp'
             }).data("telerik_WebDesigner");
     });
