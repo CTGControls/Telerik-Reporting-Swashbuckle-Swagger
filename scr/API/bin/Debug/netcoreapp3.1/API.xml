@@ -93,7 +93,6 @@
             Startup Add Config for SwaggerGen
             </summary>
             <param name="services">IServiceCollection</param>
-            <param name="Configuration">IConfiguration</param>
         </member>
         <member name="M:CTG.TRSS.API.StartupExtensions.SwaggerGenExtension.UseSwaggerGenConfig(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
             <summary>

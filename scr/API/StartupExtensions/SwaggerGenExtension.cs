@@ -71,7 +71,7 @@ namespace CTG.TRSS.API.StartupExtensions
         public void Apply(ActionModel action)
         {
             // Replace with any logic you want
-            if (action.Controller.ControllerName.Contains("Designer")) 
+            if (action.Controller.ControllerName.Contains("xDesigner")) 
             {
                 action.ApiExplorer.IsVisible = false;
             }
